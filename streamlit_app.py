@@ -6,7 +6,8 @@ import pandas as pd
 st.set_page_config(
     page_title="Green Computing",
     page_icon="assets/green_computing_icon.png",
-    layout="wide"
+    layout="wide",
+    initial_sidebar_state="expanded"
 )
 # Réduire l'espacement supérieur
 st.markdown("""
