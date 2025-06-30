@@ -1,0 +1,11 @@
+[browser]
+gatherUsageStats = false
+
+[theme]
+base = "dark"  # Ou "light" si vous préférez un thème clair
+
+[server]
+headless = true
+
+[global]
+hideStreamlitMark = true
