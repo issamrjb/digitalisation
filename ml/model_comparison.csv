@@ -1,0 +1,4 @@
+Modèle,MAE,R² Score
+RandomForest,4.55,0.984
+GradientBoosting,4.15,0.986
+LinearRegression,4.11,0.987

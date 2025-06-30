@@ -1,0 +1,58 @@
+<div style="padding: 20px; background: #fdfdfd; border-radius: 10px;">
+    <!-- MENU HORIZONTAL -->
+    <div style="text-align: center; margin-bottom: 20px;">
+        <button onclick="showSection('ctx')" style="margin: 10px;">🌐 Contexte</button>
+        <button onclick="showSection('pbm')" style="margin: 10px;">⚠️ Problématique</button>
+        <button onclick="showSection('stats')" style="margin: 10px;">📈 Statistiques</button>
+        <button onclick="showSection('obj')" style="margin: 10px;">🎯 Objectifs</button>
+    </div>
+    <!-- CONTEXTE -->
+    <div id="ctx" class="intro-section" style="display:block;">
+        <h3 style="color:#004080;">🌐 Contexte</h3>
+        <p style="text-align: justify;">
+            L'intelligence artificielle a explosé avec des outils comme <strong>ChatGPT</strong> ou <strong>DALL·E</strong>.
+            Cette révolution exige de plus en plus de puissance de calcul — alimentant la croissance des <strong>data centers</strong>.
+        </p>
+        <blockquote style="color:#666;">“Training a single large AI model can emit as much carbon as five cars in their lifetimes.”</blockquote>
+    </div>
+    <!-- PROBLÉMATIQUE -->
+    <div id="pbm" class="intro-section" style="display:none;">
+        <h3 style="color:#004080;">⚠️ Problématique</h3>
+        <ul>
+            <li>🌍 1 à 2 % de la consommation électrique mondiale</li>
+            <li>🔥 Jusqu’à 40 % pour le refroidissement</li>
+            <li>📉 PUE (Power Usage Effectiveness) non optimal</li>
+        </ul>
+    </div>
+    <!-- STATISTIQUES -->
+    <div id="stats" class="intro-section" style="display:none;">
+        <h3 style="color:#004080;">📈 Statistiques</h3>
+        <ul>
+            <li>📊 Plus de 800 data centers hyperscale (Statista, 2024)</li>
+            <li>🧊 40 % de l'énergie = refroidissement</li>
+            <li>🖥️ 50 % de VMs sous-utilisées</li>
+        </ul>
+    </div>
+    <!-- OBJECTIFS -->
+    <div id="obj" class="intro-section" style="display:none;">
+        <h3 style="color:#004080;">🎯 Objectifs</h3>
+        <ul>
+            <li>Simuler des environnements de data centers</li>
+            <li>Prédire la consommation énergétique (IA)</li>
+            <li>Optimiser le placement des VMs</li>
+        </ul>
+        <p style="font-style: italic; color: #555; text-align: center;">
+            Objectif final : efficacité énergétique durable 🌱
+        </p>
+    </div>
+</div>
+<!-- JS : changer la section visible -->
+<script>
+    function showSection(id) {
+        const sections = document.getElementsByClassName("intro-section");
+        for (let i = 0; i < sections.length; i++) {
+            sections[i].style.display = "none";
+        }
+        document.getElementById(id).style.display = "block";
+    }
+</script>

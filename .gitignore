@@ -1,0 +1,13 @@
+# Ignore l'environnement virtuel
+.venv/
+
+# Fichiers Python inutiles
+__pycache__/
+*.pyc
+
+# Configuration VS Code
+.vscode/
+
+# Fichiers système
+.DS_Store
+Thumbs.db
